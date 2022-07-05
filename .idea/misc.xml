@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ThinkPad/AndroidStudioProjects/ViewHolderReview/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/ThinkPad/AndroidStudioProjects/ViewHolderReview/app/src/main/res/layout/landmark_with_image.xml" value="0.33" />
         <entry key="..\:/Users/ThinkPad/AndroidStudioProjects/ViewHolderReview/app/src/main/res/layout/landmark_without_image.xml" value="0.13069908814589665" />
       </map>
