@@ -9,14 +9,14 @@ import com.example.viewholderreview.LandmarkAdapter.Const.NOIMAGE
 import com.example.viewholderreview.databinding.LandmarkWithImageBinding
 import com.example.viewholderreview.databinding.LandmarkWithoutImageBinding
 
-class LandmarkAdapter(private var landmarks: ArrayList<LandmarkDataModel>) :
+class LandmarkAdapter(private var landmarks: ArrayList<Landmark>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private lateinit var landmarkWithImageBinding: LandmarkWithImageBinding
 
     inner class LandmarkWithImageViewHolder(private val landmarkWithImage: LandmarkWithImageBinding) :
         RecyclerView.ViewHolder(landmarkWithImage.root) {
-            fun bind(landmark: LandmarkDataModel) {
+            fun bind(landmark: Landmark) {
                 landmarkWithImage.landmarkImage.setImageResource(landmark.resource!!)
                 landmarkWithImage.landmarkWithImageTitle.text = landmark.title
                 landmarkWithImage.landmarkWithImageDesc.text = landmark.desc
@@ -25,7 +25,7 @@ class LandmarkAdapter(private var landmarks: ArrayList<LandmarkDataModel>) :
 
     inner class LandmarkWithoutImageViewHolder(private val landmarkWithoutImage: LandmarkWithoutImageBinding) :
         RecyclerView.ViewHolder(landmarkWithoutImage.root) {
-            fun bind(landmark: LandmarkDataModel) {
+            fun bind(landmark: Landmark) {
                 landmarkWithoutImage.landmarkTitle.text = landmark.title
                 landmarkWithoutImage.landmarkDesc.text = landmark.desc
             }

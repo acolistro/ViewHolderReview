@@ -1,6 +1,6 @@
 package com.example.viewholderreview
 
-data class LandmarkDataModel(
+data class Landmark(
     val title: String,
     val desc: String,
     var resource: Int?,
